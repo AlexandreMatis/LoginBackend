@@ -19,7 +19,7 @@ app.get('/users', (req, res) => res.send(users))
 
 app.post('/create', (req, res) => {
     const user = req.body
-    user.blocked = false
+    user.block = 0
     users.push(user)
     res.send('usuário criado com sucesso')
 })
